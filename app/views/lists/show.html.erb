@@ -30,7 +30,7 @@
 <p><strong>Add a movie to the list:</strong></p>
 
 <%= simple_form_for [@list, @bookmark] do |f| %>
-  <%= f.association :movie, :collection => Movie.all  %>
+  <%= f.association :movie, :collection => @movies  %>
   <%= f.input :comment %>
   <%= f.submit "Submit review", class: "btn btn-primary" %>
 <% end %>
