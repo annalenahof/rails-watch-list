@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+<h2>This are all our Lists:</h2>
+<br>
+<div>
+<%= render "lists/listlist", lists: @lists %>
+</div>
+
+<div>
+  <%= link_to "Add a new List", lists_new_path, class: "btn btn-primary"%>
+</div>

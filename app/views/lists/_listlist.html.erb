@@ -1,0 +1,9 @@
+<div id="list">
+  <% @lists.each do |list| %>
+      <div class= mb-5>
+      <%= render list %> <p>
+      <%= link_to "Show this list", list %>
+      </div>
+    </p>
+  <% end %>
+</div>
